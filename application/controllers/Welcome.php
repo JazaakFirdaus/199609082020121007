@@ -50,9 +50,9 @@ class Welcome extends CI_Controller {
 		foreach($data_req2 as $dt2) {
 			if($id == $dt2['id_pendaftar']) {
 				$temp_data = [
-					'id_pendaftar' => $dt['id_pendaftar'],
-					'jenis_attr' => $dt['jenis_attr'],
-					'value' => $dt['value'],
+					'id_pendaftar' => $dt2['id_pendaftar'],
+					'jenis_attr' => $dt2['jenis_attr'],
+					'value' => $dt2['value'],
 				];
 				array_push($result, $temp_data);
 			}
