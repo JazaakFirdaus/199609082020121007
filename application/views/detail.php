@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -112,13 +111,6 @@
     </div>
 </div>
 
-
-<button type="button" class="hidden" id="alert_info"></button>
-<button type="button" class="hidden" id="alert_info_2"></button>
-<button type="button" class="hidden" id="alert_success"></button>
-<button type="button" class="hidden" id="alert_error"></button>
-<button type="button" class="hidden" id="alert_warning"></button>
-
 		        <div class="page-container">
             <div class="page-content">
                 <div class="sidebar sidebar-main sidebar-default">
@@ -170,8 +162,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>Posisi yang dipilih</td>
-                                                                <td>: 	
-                                <?=$posisi_yang_dipilih;?></td>
+                                                                <td>: <?=$posisi_yang_dipilih;?></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Bahasa Pemrograman yang dikuasai</td>
@@ -190,14 +181,14 @@
                                                                 <td>: <?=$pernah_membuat_mobile_apps;?></td>
                                                             </tr>
 
-                                                            <!-- <?
-                                                            if(!is_null($attr)) {
-                                                            foreach($attr as $dt2) { ?>
-                                                                <tr>
-                                                                    <td><?=$dt2['jenis_attr'];?></td>
-                                                                    <td>: <?=$dt2['value'];?></td>
-                                                                </tr>
-                                                            <? } }?> -->
+                                                            <?php if(!is_null($attr)) { ?>
+                                                                <?php foreach ($attr as $dt2) { ?>
+                                                                    <tr>
+                                                                        <td><?=$dt2['jenis_attr']; ?></td>
+                                                                        <td>: <?=$dt2['value']; ?></td>
+                                                                    </tr>
+                                                                <?php } ?>
+                                                            <?php } ?>
                                                         </tbody>
                                                     </table>
                                                 </div>
