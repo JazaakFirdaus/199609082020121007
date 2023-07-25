@@ -189,6 +189,15 @@
                                                                 <td>Pernah Mengembangkan Mobile Apps</td>
                                                                 <td>: <?=$pernah_membuat_mobile_apps;?></td>
                                                             </tr>
+
+                                                            <!-- <?
+                                                            if(!is_null($attr)) {
+                                                            foreach($attr as $dt2) { ?>
+                                                                <tr>
+                                                                    <td><?=$dt2['jenis_attr'];?></td>
+                                                                    <td>: <?=$dt2['value'];?></td>
+                                                                </tr>
+                                                            <? } }?> -->
                                                         </tbody>
                                                     </table>
                                                 </div>
